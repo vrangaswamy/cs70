@@ -1,3 +1,5 @@
+"""Generalize the Monty Hall puzzle to num_doors original doors and p revealed goats"""
+
 import random
 
 def monty(num_doors = 3, p = 1):
