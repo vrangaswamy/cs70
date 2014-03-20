@@ -29,8 +29,8 @@ def monty(num_doors = 3, p = 1):
         answer = random.randint(0, num_doors - 1)
 
     return doors[answer]
-
-def monty_count(n, num_doors = 3, p = 1):
+"""Call this funtion with a large value for n for a good estimate of the probability"""
+def monty_prob(n, num_doors = 3, p = 1):
     count = 0
     for _ in range(n):
         count += monty(num_doors, p)
